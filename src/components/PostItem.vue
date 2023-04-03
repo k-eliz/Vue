@@ -5,7 +5,7 @@
       <div><strong>Описание</strong>{{ post.body }}</div>
     </div>
     <div class="post__btns">
-      <MyButton>Удалить</MyButton>
+      <my-button>Удалить</my-button>
     </div>
   </div>
 </template>
@@ -18,7 +18,6 @@ export default {
       required: true,
     },
   },
-  components: { MyButton },
 };
 </script>
 

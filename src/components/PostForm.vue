@@ -13,14 +13,20 @@
       type="text"
       placeholder="Введите че-нить2"
     />
-    <MyButton style="align-self: flex-end; margin-top: 15px" @click="createPost"
-      >create</MyButton
+    <my-button
+      style="align-self: flex-end; margin-top: 15px"
+      @click="createPost"
+      >create</my-button
     >
   </form>
 </template>
 
 <script>
+import MyButton from "./UI/MyButton.vue";
 export default {
+  components: {
+    MyButton,
+  },
   data() {
     return {
       post: {
